@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+  font-family: Inter;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* color */
+  --color-white: #fefefe;
+  --color-outrageousOrange: #fe5c35;
+  --color-pictonBlue: #3792e5;
+  --color-frechGray: #bbbbbd;
+  --color-haiti: #0d1134;
+  --color-jumbo: #78787b;
+  --color-porsche: #eeb961;
+  --color-tamarillo: #9d1734;
+  --color-cranberry: #d8559e;
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+}
+i {
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-size: 1.6rem;
+/* flex */
+display: flex;
+align-items: center;
+justify-content: center;
+/* end flex */
+  width: 100dvw;
+  height: 100dvh;
+  background-color: var(--color-haiti);
+}
+
+section {
+  padding: 1.6rem;
+  border: .1rem solid var(--color-frechGray);
+  border-radius: .4rem;
+  background-color: var(--color-white);
+}
+
+section form h1 {
+  color: var(--color-haiti);
+  text-align: center;
+  margin-bottom: calc(.8rem + .8rem);
+}
+
+section form .form-group_input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: .8rem;
+  margin-bottom: 1.6rem;
+}
+
+section form .form-group_input label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: .4rem;
+  font-size: 1.3rem;
+}
+
+section form .form-group_input label input {
+  padding: .8rem 5.6rem .8rem .8rem;
+  width: 24.8rem;
+  border-radius: .4rem;
+  border: none;
+  border: .1rem solid var(--color-frechGray);
+  font-size: 1.2rem;
+  outline-color: var(--color-pictonBlue);
+}
+
+section form .form-group_btn,
+.form-group_btn-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+}
+
+section form .form-group_btn > button {
+  padding: .8rem 7.2rem;
+  width: 24.8rem;
+  border: none;
+  border-radius: .4rem;
+  color: var(--color-white);
+  font-weight: 600;
+  background-color: var(--color-haiti);
+}
+
+section form .form-group_btn .form-group_btn-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  gap: .8rem;
+}
+
+section form .form-group_btn .form-group_btn-separator hr {
+  width: 9.6rem;
+}
+
+section form .form-group_btn .form-group_btn-social button {
+  padding: .8rem 6.4rem;
+  width: 24.8rem;
+  border: none;
+  border-radius: .4rem;
+  border: .1rem solid var(--color-frechGray);
+  background-color: transparent;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+}
+
+section form .form-group_btn .form-group_btn-social button:nth-child(1) {
+  color: var(--color-tamarillo);
+}
